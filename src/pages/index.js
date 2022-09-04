@@ -1,28 +1,24 @@
 import React from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import BlankLines from '@site/src/components/BlankLines';
 
 import styles from './index.module.css';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
+    <div class="tablet:max-w-[100%] desktop:max-w-[92%] relative">
+      <div class="h1 mb-18 leading-[4.375rem]">
+        <h1>
+          We're building the next generation of the&nbsp;
+          <span class="relative not-prose">
+            <button class="bg-accent-cyan text-primary-black">decentralized</button>
+          </span>
+          &nbsp;web - returning data back to users. You're welcome to join.
+        </h1>
       </div>
-    </header>
+    </div>
   );
 }
 
@@ -30,11 +26,11 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title="Developers"
       description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <HomepageHeader />
+        <BlankLines lineCount="25" />
       </main>
     </Layout>
   );

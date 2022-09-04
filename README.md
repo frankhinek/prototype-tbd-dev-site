@@ -1,11 +1,16 @@
 # TBD Docs Prototyping
 
 Mock [TBD Developer Site](https://developer.tbd.website) to validate the process for publishing community-contributed
-documentation publication process.
+documentation.
+
+**NOTE:** Block, Inc. owns all rights, title, and interest to content and code copied from
+[developer.tbd.website](https://developer.tbd.website).  
 
 ## Create Docusaurus Site
 
-Steps to reproduce the creation of this mock instance of the TBD developer site.
+NOTE: You can ignore this section if you are cloning this repository.
+
+Follow the steps below to reproduce the creation of this mock instance of the TBD developer site.
 
 ### Prerequisites
 
@@ -33,4 +38,13 @@ Relocate the generated files to the root of the git repository:
 ```shell
 rm developer-site/README.md
 mv developer-site/* .
+rm -r developer-site
 ```
+
+Commit the new files:
+
+```shell
+git add -A
+git commit -m "feat: Scaffold Docusaurus project"
+```
+
