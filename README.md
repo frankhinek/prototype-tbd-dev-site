@@ -1,7 +1,10 @@
 # TBD Docs Prototyping
 
 Mock [TBD Developer Site](https://developer.tbd.website) to validate the process for publishing community-contributed
-documentation publication process.
+documentation.
+
+**NOTE:** Block, Inc. owns all rights, title, and interest to content and code copied from
+[developer.tbd.website](https://developer.tbd.website).  
 
 ## Create Docusaurus Site
 
