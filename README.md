@@ -5,7 +5,9 @@ documentation publication process.
 
 ## Create Docusaurus Site
 
-Steps to reproduce the creation of this mock instance of the TBD developer site.
+NOTE: You can ignore this section if you are cloning this repository.
+
+Follow the steps below to reproduce the creation of this mock instance of the TBD developer site.
 
 ### Prerequisites
 
@@ -33,4 +35,13 @@ Relocate the generated files to the root of the git repository:
 ```shell
 rm developer-site/README.md
 mv developer-site/* .
+rm -r developer-site
 ```
+
+Commit the new files:
+
+```shell
+git add -A
+git commit -m "feat: Scaffold Docusaurus project"
+```
+
