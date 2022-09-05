@@ -57,6 +57,19 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'events',
+        path: 'events',
+        routeBasePath: 'events',
+        sidebarPath: require.resolve('./sidebarsEvents.js'),
+        breadcrumbs: false,
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -93,10 +106,14 @@ const config = {
           {
             to: 'learn',
             label: 'Learn',
-            position: 'left'
+            position: 'left',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/events', label: 'Events', position: 'left'},
+          {
+            to: 'events',
+            label: 'Events',
+            position: 'left',
+          },
           {
             type: 'search',
             position: 'right',
