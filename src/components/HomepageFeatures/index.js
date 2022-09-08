@@ -40,7 +40,6 @@ const FeatureList = [
 function Feature({Svg, title, description}) {
   const globalData = useGlobalData();
   const output = JSON.stringify(globalData, null, 4)
-  logger.info(`${output}`)
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
