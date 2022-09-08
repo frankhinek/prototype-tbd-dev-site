@@ -12,6 +12,10 @@
   padding-right: 20px;
  }
 
+:root {
+  --ifm-hr-background-color:#000;
+}
+
 /**
  * TBD original styles.css
  */

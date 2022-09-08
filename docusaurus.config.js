@@ -41,8 +41,8 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          path: 'docs',
-          routeBasePath: 'learn',
+          path: 'docs/home',
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           breadcrumbs: false,
           // Please change this to your repo.
@@ -78,6 +78,17 @@ const config = {
         breadcrumbs: false,
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'ssi-service',
+        path: 'docs/ssi-service',
+        routeBasePath: 'learn/ssi-service',
+        sidebarPath: require.resolve('./sidebars.js'),
+        breadcrumbs: false,
+        editUrl: 'https://github.com/frankhinek/temp-tbdocs/tree/main/',
+      },
+    ],
   ],
 
   themeConfig:
@@ -102,7 +113,7 @@ const config = {
       ],
       docs: {
         sidebar: {
-          hideable: true,
+          hideable: false,
         },
       },
       navbar: {
