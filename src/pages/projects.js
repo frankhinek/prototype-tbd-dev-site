@@ -6,9 +6,9 @@ import BlankLines from '@site/src/components/BlankLines';
 function ProjectsContent() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <div class="row mdxPageWrapper_yV3F">
-      <div class="col">
-        <div class="prose prose-pink mb-13.5">
+    <div className="row mdxPageWrapper_yV3F">
+      <div className="col">
+        <div className="prose prose-pink mb-13.5">
           <h1>The future is TBD.</h1>
           <h1>Join us in shaping it.</h1>
         </div>
@@ -24,7 +24,7 @@ export default function Home() {
       title="Projects"
       description="Description will go into a meta tag in <head />">
       <main
-        class="container--fluid">
+        className="container--fluid">
         <ProjectsContent />
         <BlankLines lineCount="25" />
       </main>
