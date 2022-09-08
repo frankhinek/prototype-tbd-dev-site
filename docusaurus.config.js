@@ -68,6 +68,16 @@ const config = {
         breadcrumbs: false,
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'discussions',
+        path: 'docs/discussions',
+        routeBasePath: 'learn/discussions',
+        sidebarPath: require.resolve('./sidebars.js'),
+        breadcrumbs: false,
+      },
+    ],
   ],
 
   themeConfig:
