@@ -40,16 +40,13 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          path: 'docs/home',
-          routeBasePath: '/',
-          sidebarPath: require.resolve('./sidebars.js'),
-          breadcrumbs: false,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/frankhinek/prototype-tbdocusaurus/tree/main/',
-        },
+        // docs: {
+        //   path: 'docs/home',
+        //   routeBasePath: '/',
+        //   sidebarPath: require.resolve('./sidebars.js'),
+        //   breadcrumbs: false,
+        // },
+        docs: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -62,7 +59,7 @@ const config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'events',
-        path: 'events',
+        path: 'content/events',
         routeBasePath: 'events',
         sidebarPath: require.resolve('./sidebarsEvents.js'),
         breadcrumbs: false,
@@ -72,7 +69,7 @@ const config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'discussions',
-        path: 'docs/discussions',
+        path: 'content/discussions',
         routeBasePath: 'learn/discussions',
         sidebarPath: require.resolve('./sidebars.js'),
         breadcrumbs: false,
@@ -111,11 +108,11 @@ const config = {
         { 'name': 'twitter:description', 'content': 'Focused on building decentralized platforms, protocols, and tools that empower every individual to own their data and participate in the global economy.' },
         { 'name': 'twitter:image', 'content': 'https://developer.tbd.website/img/logos/tbd_logo.png' },
       ],
-      docs: {
-        sidebar: {
-          hideable: false,
-        },
-      },
+      // docs: {
+      //   sidebar: {
+      //     hideable: false,
+      //   },
+      // },
       navbar: {
         logo: {
           alt: 'TBD Logo',
