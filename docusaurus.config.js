@@ -83,7 +83,7 @@ const config = {
         routeBasePath: 'learn/ssi-service',
         sidebarPath: require.resolve('./sidebars.js'),
         breadcrumbs: false,
-        editUrl: 'https://github.com/frankhinek/temp-tbdocs/tree/main/',
+        editUrl: 'https://github.com/frankhinek/prototype-tbdocs/tree/main/',
       },
     ],
   ],
